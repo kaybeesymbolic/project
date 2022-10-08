@@ -1,0 +1,21 @@
+{{#user}}
+    <form method="post" action="/books/add">
+        <div class="mb-3">
+            <label for="title" class="form-label">Blog Title</label>
+            <input type="text" class="form-control" name="title" required maxlength="70">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Author Name</label>
+            <input type="email" class="form-control" name="names" value={{user.name}} aria-describedby="emailHelp" disabled>
+            <div id="emailHelp" class="form-text">We have included your name to avoid sharing your email.</div>
+        </div>
+        <div class="mb-3">
+            <label for="body" class="form-label">Blog Content</label>
+            <textarea class="form-control" name="content" rows="5" maxlength="1000" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{{/user}}
+{{^ user}}
+    Guest can't submit article or post
+{{/user}}

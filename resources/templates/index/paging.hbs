@@ -1,0 +1,12 @@
+<nav aria-label="Page navigation example mt-2 mb-1">
+    <ul class="pagination justify-content-between d-flex">
+
+        <li class="page-item {{^ previous}}disabled{{/previous}}">
+            <a class="page-link" href="/index/previous" tabindex="-1">Previous</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link {{^ current}}disabled{{/current}}" href="/index/next">Next</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{{> ../reuse/head.hbs}}
+<body style>
+<header>
+    {{> ../reuse/addBookNav.hbs}}
+</header>
+
+<main class="container-fluid bg-gradient-light">
+    <div class="row justify-content-center">
+        <div class="col-xs col-md-4">
+            {{# article}}
+                <p class="h4 text-start text-info my-3">{{book.name}}</p>
+                <div class="bg-gradient-light">
+                    {{book.content}}
+                </div>
+            {{/article}}
+        </div>
+    </div>
+
+    {{^ article}}
+        No content
+    {{/article}}
+</main>
+
+{{> ../reuse/footer.hbs}}
+{{> ../reuse/includeJs.hbs}}
+</body>
+</html>

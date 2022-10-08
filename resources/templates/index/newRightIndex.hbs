@@ -1,0 +1,15 @@
+
+
+
+<p class="h5 text-start tex-decoration-underline">Recent Posts</p>
+
+{{#books}}
+    <a class="btn bg-light mt-2 mb-1 d-block rounded table-over" href="{{link}}">
+        <p class="text-truncate text-start my-0 fw-semibold">{{book.name}}</p>
+        <p class="d-flex my-0">
+            <small class="flex-shrink me-auto text-muted text-start">{{book.author}}</small>
+            <small class="flex-fill text-muted text-end">{{book.published}}</small>
+        </p>
+    </a>
+{{/books}}
+{{^ books}}No posts{{/books}}

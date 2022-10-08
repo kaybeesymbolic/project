@@ -1,0 +1,12 @@
+<form class="d-flex flex-column p-5 mb-5 bg-light bg-gradient rounded"
+      method="post"
+      action="/register"
+      enctype="application/x-www-form-urlencoded"
+>
+
+    <input required class="my-1 form-control" type="text" name="first" placeholder="Enter First Name" minlength="3" />
+    <input required class="my-1 form-control" type="text" name="last" placeholder="Enter Last Name" minlength="3" />
+    <input required class="my-1 form-control" type="email" name="username" placeholder="Enter email address" minlength="6" maxlength="32"/>
+    <input required class="my-1 form-control" type="password" name="password" placeholder="Enter password" minlength="6" maxlength="12"/>
+    <button type="submit" class="btn btn-outline-dark btn-md my-1">Sign Up</button>
+</form>

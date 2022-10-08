@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{{> ../reuse/head.hbs}}
+
+<body>
+
+<header>
+    {{> ../reuse/loginNav.hbs}}
+</header>
+
+<main class="container-fluid bg-gradient mb-5">
+    <section class="row justify-content-center">
+        <section class="col-sm col-md-4">
+            <p class="h4 text-muted text-center">User Sign In</p>
+            {{> loginForm.hbs}}
+        </section>
+    </section>
+</main>
+
+{{> ../reuse/footer.hbs}}
+{{> ../reuse/includeJs.hbs}}
+</body>
+</html>

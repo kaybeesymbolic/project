@@ -1,0 +1,17 @@
+
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index">
+            <strong class="h1 text-success">P</strong>
+            <small class="text-mute h3">Book Store</small>
+        </a>
+
+        <section class="d-inline-flex">
+            {{#user}}{{> signOutButton.hbs}}{{/user}}
+            {{^ user}}{{> signInButton.hbs}}{{/user}}
+        </section>
+    </div>
+</nav>
+
+
